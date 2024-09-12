@@ -3,27 +3,32 @@ import { Link } from "react-router-dom";
 const Profile = () => {
   return (
     <>
-      <header className="bg-green-100">
-        <nav className="flex justify-between items-center mx-5 py-6">
-          <ul className="flex flex-wrap items-center space-x-4 p-4">
-            <li className="flex justify-center items-center gap-2 px-6 py-2">
-              <Link to="/about" className="text-gray-100 hover:text-green-400 transition-colors duration-300 font-medium">
+    <div className="justify-center items-center pl-[25%]">
+      <div className="w-[614px] h-[62px] pt-7 flex-shrink-0 rounded-[23px] bg-[#171717] shadow-custom-inset">
+          <ul className="flex justify-center items-center gap-12 rounded-md">
+            <li className="text-white text-center font-poppins text-[18px] font-medium leading-[16.12px]">
+              <Link to="/about" className="">
                 About Me
               </Link>
             </li>
-            <li className="flex justify-center items-center gap-2 w-[195px] h-[49px] px-6 py-2">
-              <Link to="/experiences" className="text-gray-100 hover:text-green-400 transition-colors duration-300 font-medium text-[15px]">
+            <li className="text-white text-center font-poppins text-[18px] font-medium leading-[16.12px] ">
+              <Link to="/experiences" className="">
               Experiences
               </Link>
             </li>
-            <li className="flex justify-center items-center gap-2 w-[195px] h-[49px] px-6 py-2">
-              <Link to="/recommended" className="text-gray-100 hover:text-green-400 transition-colors duration-300 font-medium text-[15px]">
+            <li className="text-white text-center font-poppins text-[18px] font-medium leading-[16.12px]">
+              <Link to="/recommended" className="">
               Recommended
               </Link>
             </li>
           </ul>
-        </nav>
-      </header>
+      </div>
+      <div className="text-[#969696] text-[20px] font-normal leading-normal font-plus-jakarta w-[600px]">
+        <p>Hello! I’m Dave, your sales rep here from Salesforce. I’ve been working at this awesome company for 3 years now.
+
+         I was born and raised in Albany, NY& have been living in Santa Carla for the past 10 years my wife Tiffany and my 4 year old twin daughters- Emma and Ella. Both of them are just starting school, so my calender is usually blocked between 9-10 AM. This is a...</p>
+      </div>
+    </div>
     </>
   );
 };
